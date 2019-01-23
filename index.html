@@ -13,6 +13,38 @@
     <title>Document</title>
 </head>
 <body>
+
+        <div id="container1" class="container"> 
+            <h1>Busca tu película</h1>
+            <div id="select-gender" class="col s12 m4">
+                <select id="select-gender-category" class="icons">
+                    <option value="" disabled selected>Género</option>
+                    <option value="28" >Acción</option>
+                    <option value="12" >Aventura</option>
+                    <option value="16" >Animación</option>
+                    <option value="35" >Comedia</option>
+                    <option value="80" >Crimen</option>
+                </select>
+            </div>
+                <div class="row">
+                        <div class="input-field col s6 m4">
+                          <input id="inputprueba" type="text" placeholder="Buscar">
+                          <a id="btn-buscar" class="waves-effect waves-light btn"><i class="material-icons right">movie</i>Buscar</a>
+                        </div>
+                </div>
+                <div id="content" class="row"></div>
+                <div id="content1" class="row"></div>
+                <ul id="demo" class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active" value="1"><a href="#!">1</a></li>
+                    <li class="waves-effect" value="2"><a href="#!">2</a></li>
+                    <li class="waves-effect" value="3"><a href="#!">3</a></li>
+                    <li class="waves-effect" value="4"><a href="#!">4</a></li>
+                    <li class="waves-effect" value="5"><a href="#!">5</a></li>
+                    <li class=" waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+        </div>          
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> --> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
