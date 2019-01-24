@@ -1,7 +1,9 @@
 body{
-   /* background-image: url(IMG/kidsBackground.jpeg);*/
+    background-image: url(IMG/fondoprincipal.png);
     background-attachment: fixed;
     background-color: #eceff1;
+    background-size: cover;
+    background-position: center;
 }
 #nav-bar{
     background-color: white;
@@ -63,4 +65,35 @@ img.responsive-img{
     max-height: 350px;
     max-width: 250px;   
 }
-
+.page-footer{
+    background-color: transparent;
+}
+#social-media li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+#social-media li a{
+    font-size: 25px;
+}
+#social-media li a i{
+    line-height: 50px;
+}
+#space-footer{
+    margin-left: 60px;
+}
+.footer-copyright a:hover{
+    text-decoration: underline;
+}
+.footer-copyright{
+    text-align: center;
+}
+.instagram{
+  width: 35px;
+}
+#select-gender-category{
+    background-color: aqua;
+}
+#btn-buscar{
+    background-color: #0075ce;
+}
