@@ -1,3 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 p.title-name.card-title{
     font-size: 20px;
 }
+body{
+   /* background-image: url(IMG/kidsBackground.jpeg);*/
+    background-attachment: fixed;
+    background-color: #eceff1;
+}
+#nav-bar{
+    background-color: white;
+}
+#logo{
+    width: 70%;
+    padding-top: 2%;
+    padding-right: 10%;
+}
+#demo{
+    text-align: right;
+}
+.movie-img{
+    height: 400px;
+}
+#search-input{
+    margin-top:0;
+}
+
+.textOverImage{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    float: left;
+    margin: 10px;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.5s;
+}
+.textOverImage:hover{
+    background-size: 110%;
+}
+.textOverImage::after{
+    position: absolute;
+    top:90%;
+    bottom: 0;
+    left:0;
+    right: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+.textOverImage:hover:after{
+    top: 0;
+    padding: 8px;
+    background-color: rgba(0,0,0,0.6);
+}
+.textOverImage::first-line{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+img.responsive-img{
+    width: 300px;
+    max-height: 350px;
+    max-width: 250px;   
+}
+

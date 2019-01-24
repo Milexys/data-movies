@@ -10,38 +10,79 @@
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Muy Peques</title>
 </head>
 <body>
+    
+        <nav id="nav-bar">
+                <div class="container nav-wrapper ">
+                    <a href="#" class="brand-logo"><img id="logo" class="responsive-img" src="IMG/logokids.jpeg"></a>
+                    <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul  class="right hide-on-med-and-down">
+                        <li><a class="black-text"  href="https://www.pelispedia.tv/">PelisPedia</a>
+                        </li>
+                        <li><a class="black-text" href="https://www.cuevana2.com/" target="_blank">Cuevana</a>
+                        </li>
+                        <li><a class="black-text" href="#" id="contact-btn">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="sidenav" id="menu-responsive">
+                        <li><a id="back-to-initial-responsive" href="#">Inicio</a>
+                        </li>
+                        <li><a href="https://www.cuevana2.com/">Cuevana</a>
+                        </li>
+                        <li><a id="contact-btn-responsive" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="carousel carousel-slider center">
+                <div class="carousel-fixed-item center">
+                </div>
+                <div class="carousel-item  white-text" href="#one!">
+                   <img src="IMG/coc.jpeg"  alt="coco imagen"> 
+                </div>
+                <div class="carousel-item  white-text" href="#two!">
+                    <img class="movie-img" src="IMG/frozen.jpeg" alt="frozen imagen">
+                </div>
+                <div class="carousel-item  white-text" href="#three!">
+                    <img class="movie-img" src="IMG/increibles1.jpg" alt="mulan imagen">
+                </div>
+                <div class="carousel-item  white-text" href="#four!">
+                    <img class="movie-img" src="IMG/zootopia.jpg" alt="zootopia imagen">
+                </div>
+              </div>
 
         <div id="container1" class="container"> 
-            <h1>Busca tu película</h1>
-            <div id="select-gender" class="col s12 m4">
-                <select id="select-gender-category" class="icons">
-                    <option value="" disabled selected>Género</option>
-                    <option value="28" >Acción</option>
-                    <option value="12" >Aventura</option>
-                    <option value="16" >Animación</option>
-                    <option value="35" >Comedia</option>
-                    <option value="80" >Crimen</option>
-                </select>
-            </div>
+            <!--<h1>Busca tu película</h1>-->
                 <div class="row">
-                        <div class="input-field col s6 m4">
+                    <br>
+                        <div id="select-gender" class="col s12 m6">
+                                <select id="select-gender-category" class="icons">
+                                    <option value="" disabled selected>Género</option>
+                                    <option value="12" >Aventura</option>
+                                    <option value="35" >Comedia</option>
+                                    <option value="10402" >Musical</option>
+                                    <option value="16" >Animación</option>
+                                </select> 
+                        </div>    
+                        <div id="search-input" class="input-field col s12 m6">
                           <input id="inputprueba" type="text" placeholder="Buscar">
                           <a id="btn-buscar" class="waves-effect waves-light btn"><i class="material-icons right">movie</i>Buscar</a>
                         </div>
                 </div>
-                <div id="content" class="row"></div>
+                
                 <div id="content1" class="row"></div>
-                <ul id="demo" class="pagination">
-                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active" value="1"><a href="#!">1</a></li>
-                    <li class="waves-effect" value="2"><a href="#!">2</a></li>
-                    <li class="waves-effect" value="3"><a href="#!">3</a></li>
-                    <li class="waves-effect" value="4"><a href="#!">4</a></li>
-                    <li class="waves-effect" value="5"><a href="#!">5</a></li>
-                    <li class=" waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                <ul id="demo" class="pagination ">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    <li class="number active" value="1"><a href="#!">1</a></li>
+                    <li class="number waves-effect" value="2"><a href="#!">2</a></li>
+                    <li class="number waves-effect" value="3"><a href="#!">3</a></li>
+                    <li class="number waves-effect" value="4"><a href="#!">4</a></li>
+                    <li class="number waves-effect" value="5"><a href="#!">5</a></li>
+                    <li class="number waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
                 </ul>
         </div>          
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> --> 
