@@ -21,9 +21,11 @@ window.onload= fetcheame
            `
 
   <div class="col s6 m4">
+  <div class="card">
       <div  id="images" class="textOverImage card-image responsive-img" data-text="${allData[i].title}
       ${allData[i].overview}"> 
-        <img  class=" responsive-img" src="https://image.tmdb.org/t/p/w500${allData[i].poster_path}">
+        <img  class="img" src="https://image.tmdb.org/t/p/w500${allData[i].poster_path}">
+      </div>
       </div>
   </div> 
 `
@@ -47,16 +49,15 @@ window.onload= fetcheame
                 for (let i = 0; i <allData.length; i++){
                   document.getElementById('content1').innerHTML += 
                   `
-         
-  
          <div class="col s6 m4">
+         <div class="card">
             <div  id="images" class="textOverImage card-image responsive-img" data-text="${allData[i].title} 
                 ${allData[i].overview}"> 
-               <img class=" responsive-img" src="https://image.tmdb.org/t/p/w500${allData[i].poster_path}">
+               <img class="img" src="https://image.tmdb.org/t/p/w500${allData[i].poster_path}">
+            </div>
             </div>
          </div> 
-       `
-                  
+       `                  
                  }
               })
             })
@@ -87,9 +88,11 @@ document.getElementById("btn-buscar").addEventListener("click", ()=>{
         document.getElementById("content1").innerHTML +=
       `
   <div class="col s6 m4">
+  <div class="card">
       <div  id="images" class="textOverImage card-image responsive-img" data-text="${allData[i].Title}
       ${window.plotArray[i]}"> 
-        <img class=" responsive-img" src="${allData[i].Poster}">
+        <img class="img" src="${allData[i].Poster}">
+      </div>
       </div>
   </div> 
 `
