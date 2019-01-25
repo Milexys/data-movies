@@ -232,7 +232,7 @@ document.getElementById("btn-buscar").addEventListener("click", ()=>{
   let searching = document.getElementsByClassName("page-number").value;
   let searching1 = document.getElementById("inputprueba").value;
   document.getElementById("content1").innerHTML=""
-  fetch("http://www.omdbapi.com/?s="+searching1+"&page="+searching+"&apikey=24244c98&plot=full")
+  fetch("https://www.omdbapi.com/?s="+searching1+"&page="+searching+"&apikey=24244c98&plot=full")
   //http://www.omdbapi.com/?t=barbie&plot=full&apikey=24244c98
   .then(data => data.json())
   .then(data => {
